@@ -144,13 +144,13 @@ block content
     p Toolbar Svelte component (`<Toolbar>`) has additional slots for custom elements:
     ul
       li `default` - element will be inserted as a child of `<div class="toolbarInner">` element
-      li `beforeInner` - element will be inserted right before `<div class="toolbarInner">` element
-      li `afterInner` - element will be inserted right after `<div class="toolbarInner">` element
+      li `before-inner` - element will be inserted right before `<div class="toolbarInner">` element
+      li `after-inner` - element will be inserted right after `<div class="toolbarInner">` element
 
     ```svelte
       <Toolbar>
-        <div slot="beforeInner">Before Inner</div>
-        <div slot="afterInner">After Inner</div>
+        <div slot="before-inner">Before Inner</div>
+        <div slot="after-inner">After Inner</div>
         <!-- Goes to default slot: -->
         <Link>Left Link</Link>
         <Link>Right Link</Link>
